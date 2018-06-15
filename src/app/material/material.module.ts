@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {
   MatToolbarModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatExpansionModule
 } from "@angular/material";
 
 import { MaterialDemoComponent } from "./material-demo/material-demo.component";
@@ -17,7 +18,8 @@ import { MaterialDemoComponent } from "./material-demo/material-demo.component";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule
   ],
   exports: [MatToolbarModule, MatButtonModule, MatIconModule],
   declarations: [MaterialDemoComponent]
