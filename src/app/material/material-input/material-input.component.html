@@ -1,0 +1,77 @@
+<h3>Input Tipos</h3>
+<div>
+  <mat-form-field>
+    <input matInput type="text" placeholder="text">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="color" placeholder="color">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="date" placeholder="date">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="datetime-local" placeholder="datetime-local">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="email" placeholder="email" [formControl]="emailFormControl">
+    <mat-hint>Recuerde email@dominio.com</mat-hint>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is
+      <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <br>
+  <mat-form-field>
+    <input matInput type="month" placeholder="month">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="number" placeholder="number">
+  </mat-form-field>
+  <mat-hint>Recuerde colocar solo números!</mat-hint>
+  <br>
+  <mat-form-field>
+    <input #password matInput type="password" placeholder="password" maxlength="6">
+    <mat-hint align="start">
+      <strong>Vas escribiendo </strong>
+    </mat-hint>
+    <mat-hint align="end">{{password.value.length}} de 6 caracteres permitidos</mat-hint>
+  </mat-form-field>
+  <br>
+  <br>
+  <mat-form-field>
+    <input matInput type="search" placeholder="search">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="tel" placeholder="tel">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="time" placeholder="time">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="url" placeholder="url">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="week" placeholder="week">
+  </mat-form-field>
+</div>
+<h3>Prefijo y Sufijos</h3>
+<div>
+  <mat-form-field>
+    <span matPrefix> +1&nbsp; </span>
+    <input matInput type="text" placeholder="Telefono">
+    <span matSuffix>:-)</span>
+  </mat-form-field>
+</div>
