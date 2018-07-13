@@ -29,5 +29,13 @@ export class MaterialListComponent implements OnInit {
       nombre: "Luis Ibañez",
       ciudad: "Apurimac"
     };
+
+    setTimeout(() => {
+      this.estudiante3 = {
+        id: 4,
+        nombre: "Lucas Mateo",
+        ciudad: "Cuzco"
+      };
+    }, 3000);
   }
 }
