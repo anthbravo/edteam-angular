@@ -10,6 +10,10 @@ export class MaterialListComponent implements OnInit {
   estudiante1: Estudiante;
   estudiante2: Estudiante;
   estudiante3: Estudiante;
+
+  readonly DEFAULT_PICTURE =
+    "https://i.pinimg.com/originals/50/25/aa/5025aa8edffb863a9c00ac0f0dd17bd2.png";
+
   constructor() {}
 
   ngOnInit() {
@@ -22,17 +26,21 @@ export class MaterialListComponent implements OnInit {
     this.estudiante2 = {
       id: 2,
       nombre: "Jose Bustamante",
-      ciudad: "Nazca"
+      ciudad: "Nazca",
+      fotoURL:
+        "https://texasbarblog.lexblogplatformtwo.com/files/2013/01/Zachary-Oliva1.jpg"
     };
     this.estudiante3 = {
       id: 3,
       nombre: "Luis Ibañez",
-      ciudad: "Apurimac"
+      ciudad: "Apurimac",
+      fotoURL:
+        "https://texasbarblog.lexblogplatformtwo.com/files/2009/03/jimmyverner1.jpg"
     };
 
     setTimeout(() => {
       this.estudiante3 = {
-        id: 4,
+        id: 3,
         nombre: "Lucas Mateo",
         ciudad: "Cuzco"
       };

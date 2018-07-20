@@ -1,17 +1,20 @@
 <mat-list>
   <h3 matSubheader>Usuarios</h3>
   <mat-list-item>
-    <img mat-list-avatar src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="">
+    <img *ngIf="estudiante1.fotoURL" mat-list-avatar [src]="estudiante1.fotoURL" alt="">
+    <img *ngIf="!estudiante1.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="">
     <span mat-line>{{estudiante1.nombre}}</span>
     <span mat-line>{{estudiante1.ciudad}}</span>
   </mat-list-item>
   <mat-list-item>
-    <img mat-list-avatar src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="">
+    <img *ngIf="estudiante2.fotoURL" mat-list-avatar [src]="estudiante2.fotoURL" alt="">
+    <img *ngIf="!estudiante2.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="">
     <span mat-line>{{estudiante2.nombre}}</span>
     <span mat-line>{{estudiante2.ciudad}}</span>
   </mat-list-item>
   <mat-list-item>
-    <img mat-list-avatar src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="">
+    <img *ngIf="estudiante3.fotoURL" mat-list-avatar [src]="estudiante3.fotoURL" alt="">
+    <img *ngIf="!estudiante3.fotoURL" mat-list-avatar [src]="DEFAULT_PICTURE" alt="">
     <span mat-line>{{estudiante3.nombre}}</span>
     <span mat-line>{{estudiante3.ciudad}}</span>
   </mat-list-item>
