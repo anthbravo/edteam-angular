@@ -7,6 +7,7 @@ import { Estudiante } from "../../shared/model/Estudiante";
   styleUrls: ["./material-list.component.css"]
 })
 export class MaterialListComponent implements OnInit {
+  estudiantes: Array<Estudiante>;
   estudiante1: Estudiante;
   estudiante2: Estudiante;
   estudiante3: Estudiante;
@@ -38,8 +39,10 @@ export class MaterialListComponent implements OnInit {
         "https://texasbarblog.lexblogplatformtwo.com/files/2009/03/jimmyverner1.jpg"
     };
 
+    this.estudiantes = [this.estudiante1, this.estudiante2, this.estudiante3];
+
     setTimeout(() => {
-      this.estudiante3 = {
+      this.estudiantes[2] = {
         id: 3,
         nombre: "Lucas Mateo",
         ciudad: "Cuzco"
