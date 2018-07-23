@@ -1,7 +1,7 @@
 <h3>Input Tipos</h3>
 <div>
   <mat-form-field>
-    <input matInput type="text" placeholder="text">
+    <input matInput type="text" placeholder="text" [value]="value" (click)="onClick($event)">
   </mat-form-field>
   <br>
   <mat-form-field>
