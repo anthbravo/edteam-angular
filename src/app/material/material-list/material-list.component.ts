@@ -12,9 +12,6 @@ export class MaterialListComponent implements OnInit {
   estudiante2: Estudiante;
   estudiante3: Estudiante;
 
-  readonly DEFAULT_PICTURE =
-    "https://i.pinimg.com/originals/50/25/aa/5025aa8edffb863a9c00ac0f0dd17bd2.png";
-
   constructor() {}
 
   ngOnInit() {
@@ -48,5 +45,9 @@ export class MaterialListComponent implements OnInit {
         ciudad: "Cuzco"
       };
     }, 3000);
+  }
+
+  onMouseClick($event: Estudiante) {
+    console.log("onMouseClick", $event);
   }
 }
