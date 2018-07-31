@@ -1,13 +1,13 @@
 <div class="card-container">
   <mat-card class="card-content">
-    <h3>Astronomy Picture</h3>
+    <h3>{{'Astronomy Picture' | firm}}</h3>
     <mat-card-header>
       <img mat-card-avatar src="https://media.giphy.com/media/8p5hBqhENpGIE/giphy.gif" alt="">
       <mat-card-title>
         {{apod.title}}
       </mat-card-title>
       <mat-card-subtitle>
-        {{apod.date}}
+        {{apod.date | date: 'fullDate'}}
       </mat-card-subtitle>
     </mat-card-header>
 

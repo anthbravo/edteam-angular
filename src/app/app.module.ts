@@ -6,9 +6,10 @@ import { AppComponent } from "./app.component";
 import { MaterialModule } from "./material/material.module";
 import { HomeComponent } from "./home/home.component";
 import { NasaApiService } from "./shared/services/nasa-api.service";
+import { FirmPipe } from './shared/pipes/firm.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, FirmPipe],
   imports: [BrowserModule, AppRoutingModule, MaterialModule],
   providers: [NasaApiService],
   bootstrap: [AppComponent]
