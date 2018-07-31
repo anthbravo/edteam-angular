@@ -7,7 +7,7 @@ import { Apod } from "../model/apod";
 export class NasaApiService {
   DATA: Apod = {
     title: "La Tierra",
-    date: "21-05-1993",
+    date: "1993/05/21",
     explanation: "Foto de la tierra",
     url: "url",
     hdurl: "hdurl",
