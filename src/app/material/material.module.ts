@@ -11,14 +11,15 @@ import {
   MatIconModule,
   MatExpansionModule,
   MatInputModule,
-  MatListModule
+  MatListModule,
+  MatCardModule
 } from "@angular/material";
 
 import { MaterialDemoComponent } from "./material-demo/material-demo.component";
 import { MaterialButtonComponent } from "./material-button/material-button.component";
 import { MaterialInputComponent } from "./material-input/material-input.component";
-import { MaterialListComponent } from './material-list/material-list.component';
-import { ItemEstudianteComponent } from './material-input/item-estudiante/item-estudiante.component';
+import { MaterialListComponent } from "./material-list/material-list.component";
+import { ItemEstudianteComponent } from "./material-input/item-estudiante/item-estudiante.component";
 
 @NgModule({
   imports: [
@@ -30,9 +31,10 @@ import { ItemEstudianteComponent } from './material-input/item-estudiante/item-e
     MatIconModule,
     MatExpansionModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
-  exports: [MatToolbarModule, MatButtonModule, MatIconModule],
+  exports: [MatToolbarModule, MatButtonModule, MatIconModule, MatCardModule],
   declarations: [
     MaterialDemoComponent,
     MaterialButtonComponent,
