@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 import {
   MatToolbarModule,
@@ -34,7 +34,8 @@ import { ItemEstudianteComponent } from "./material-input/item-estudiante/item-e
     MatInputModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   exports: [
     MatToolbarModule,

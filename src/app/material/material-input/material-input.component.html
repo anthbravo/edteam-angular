@@ -1,8 +1,11 @@
 <h3>Input Tipos</h3>
 <div>
   <mat-form-field>
-    <input matInput type="text" placeholder="text" [value]="value" (click)="onClick($event)">
+    <input [(ngModel)]="value" matInput type="text" placeholder="text" (click)="onClick($event)">
+    <!--  [value]="value" -->
   </mat-form-field>
+  <br>
+  <pre>{{value}}</pre>
   <br>
   <mat-form-field>
     <input matInput type="color" placeholder="color">
